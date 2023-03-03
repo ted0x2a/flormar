@@ -1,0 +1,215 @@
+/*
+Theme Name: Flormar
+Author: Dmitry Chernykh
+Version: 1.0.0
+Template: storefront
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap');
+
+@font-face {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/futura.ttf');
+}
+
+* {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.site-header {
+    padding: 0 !important;
+    background-color: #fff;
+}
+
+.site-main {
+    padding-top: 0 !important;
+}
+
+button.menu-toggle::before,
+button.menu-toggle::after,
+button.menu-toggle span::before {
+    width: 34px;
+    height: 3px;
+    background-color: #fff;
+}
+
+button.menu-toggle::before {
+    transform: translateY(-15px);
+}
+
+button.menu-toggle::after {
+    transform: translateY(15px);
+}
+
+.main-navigation.toggled button.menu-toggle::before,
+.main-navigation.toggled button.menu-toggle::after,
+.main-navigation.toggled button.menu-toggle span::before {
+    background-color: #333;
+}
+
+button.menu-toggle {
+    background-color: transparent;
+    display: block;
+    width: 50px;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    border: 0;
+    padding: 0;
+}
+
+button.menu-toggle:hover {
+    background-color: transparent;
+}
+
+a:focus,
+button:focus {
+    outline: none;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination {
+    bottom: 15px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 12px !important;
+    background: #fff;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff61e6;
+}
+
+.page,
+.content-area,
+.site-main,
+.site-footer {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.page-template-template-homepage .entry-content {
+    max-width: 1110px;
+    padding-top: 60px;
+    margin-bottom: 114px;
+}
+
+.main-navigation ul.nav-menu > li > a {
+    padding: 40px 1em;
+    font-size: 20px;
+}
+
+.add-read-more {
+    text-align: right;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.add-read-more .second-section {
+    display: none;
+}
+
+.add-read-more.show-more-content .second-section {
+    display: inline;
+}
+
+.add-read-more.show-more-content .read-more {
+    display: none;
+}
+
+.add-read-more .read-more {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.add-read-more .read-more::before {
+    content: url('assets/images/vector.png');
+    padding-left: 6px;
+}
+
+ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.site-main ul.products li.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.woocommerce-loop-product__title {
+    font-family: 'Futura';
+    flex-basis: 100%;
+}
+
+ul.products li.product .in-stock {
+    margin: 0;
+    line-height: 30px;
+}
+
+ul.products li.product .price {
+    flex-basis: 25%;
+    flex-grow: 1;
+    text-align: right;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 18px;
+}
+
+.hentry .entry-content a.button {
+    width: 80%;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    border: 1px solid #000;
+}
+
+
+@media (min-width: 768px) {
+
+    .main-navigation div.menu {
+        display: none;
+    }
+
+    .main-navigation.toggled div.menu {
+        display: block;
+    }
+
+    .main-navigation.toggled div.menu:last-child {
+        display:none;
+    }
+
+    button.menu-toggle {
+        top: 40px;
+        right: 180px;
+    }
+
+
+}
